@@ -13,11 +13,13 @@ function App() {
       <Header />
       <div>
         <Routes>
+        
           <Route path="/posts" element={<Home />} />
           <Route path="/posts/:id" element={<Post />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<PageNotFound />} />
+
         </Routes>
         <footer className='footer'>Footer</footer>
       </div>
